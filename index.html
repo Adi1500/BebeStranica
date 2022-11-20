@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby San</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+    <header class="first-header">
+        <div class="container">
+            <img src="img/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="/" class="active">POČETNA <i class="fa fa-home"></i></a></li>
+                    <li><a href="/galerija.html">GALERIJA <i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                    <li><a href="/onama.html">O NAMA <i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="/kontakt.html">KONTAKT <i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li><a href="/narudzba.html">NARUDŽBA <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="slideshow">
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    
+                    <div class="slide first">
+                        <img src="img/kolica1.jpg" alt="">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="img/kolica2.jpg" alt="">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="img/kolica3.jpg" alt="">
+                    </div>
+                    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        }, 5000)
+    </script>
+
+</body>
+</html>
