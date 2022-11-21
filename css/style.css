@@ -37,6 +37,17 @@ body{
     margin-top: 2%;
 }
 
+.first-header .naslov{
+    display: inline;
+    vertical-align: middle;
+}
+
+.first-header .naslov h1{
+    margin-top: 35px;
+    margin-left: 35px;
+    font-family: cursive;
+}
+
 .carousel-item{
     height: 32rem;
     background-color: rgb(255, 255, 255);
@@ -66,10 +77,24 @@ body{
     border-radius: 5%;
 }
 
-.carousel-inner img{
-    margin-left: 30%;
-    margin-top: 80px;
-}
+
+@media (min-width: 800px) {
+    .carousel-inner img{
+        margin-left: 30%;
+        margin-top: 80px;
+        height: 300px;
+        width: 40%;
+    }
+    
+  }
+
+@media (max-width: 600px) {
+    .carousel-inner img {
+        margin-top: 80px;
+        height: 300px;
+        width: 100%;
+    }
+  }
 
 .carousel-indicators li {
     background-color: #000;
