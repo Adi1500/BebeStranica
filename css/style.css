@@ -35,6 +35,7 @@ body{
 
 .first-header img{
     margin-top: 2%;
+    float: left;
 }
 
 .first-header .naslov{
@@ -46,6 +47,8 @@ body{
     margin-top: 35px;
     margin-left: 35px;
     font-family: cursive;
+    float: right;
+    color: white;
 }
 
 .carousel-item{
